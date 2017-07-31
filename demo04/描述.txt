@@ -1,0 +1,5 @@
+基于jQuery及 input表单文件上传实现的类似QQ空间相册上传图片的特效，
+支持多图片上传，兼容360、FireFox、Chrome、Safari、Opera等内核浏览器，
+不支持IE9及以下浏览器。
+
+

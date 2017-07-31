@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{ background:#434343;}
+#box{
+	width:730px;
+	height:454px;
+	margin:100px auto;
+	padding: 20px;
+	background-color:#222;
+	border-radius: 20px;
+	box-shadow: 0 0 7px #fff;
+}
+#Tz_banner{
+	position:relative;
+	width:730px;
+	height:454px;
+	
+}
+.img{
+	width:730px;
+	height:454px;
+}
+.img ul li{
+	list-style:none;
+	display:none;
+}
+.img ul li.curr{
+	display:block;
+
+}
+.icon{
+	position:absolute;
+	left:0px;
+	bottom:8px;
+	width:100%;
+	text-align:center;
+}
+.icon ul li{
+	display:inline-block;
+	list-style:none;
+	width:18px;
+	height:18px;
+	background:#000;
+	border-radius:50%;
+	color:#fff;
+	text-align:center;
+	cursor:pointer;
+}
+.icon ul li.first{
+	background:#f00;
+}
+.btn{
+	display:none;
+}
+.btn div{
+	position:absolute;
+	top:190px;
+	width:28px;
+	height:62px;
+	background:rgba(0,0,0,0.2);
+	color:#fff;
+	font-size:24px;
+	text-align:center;
+	line-height:62px;
+	cursor:pointer;
+
+}
+.btn div.left{
+	left:0;
+}
+.btn div.right{
+	right:0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jquery结合css3实现全屏滚动特效</title>
+<meta name="Keywords" content="一款流行的全屏滚动场景效果,利用jQuery以及fullPage插件完成,fullPage是一款为全屏滚动特效量身打造的插件。支持CSS3动画以及回调函数等,自带侧边栏导航。">
+<meta name="description" content="css3滚屏特效,jquery全屏滚动特效">
+	<!--fullPage配套样式表-->
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<!--Tz_wrap start-->
+<div id="Tz_wrap">
+	<!--section (page1) -->
+	<div class="section">
+		<div class="box1">
+			<img src="images/cl.png" width="347" height="190" alt="车轮" style="position:relative; top:300px; z-index:999;"/>
+			<img src="images/ph1.png" width="272" height="506" alt="iphone手机" style="position:absolute; left:830px; z-index:99; top:250px;" class="ph1" class="ph2" />
+			<img src="images/wheel-1.png" width="172" height="172" alt="轮子" style="position:relative; left:-130px; margin-top:-30px;" class="wheel" />
+			<img src="images/wheel-2.png" width="66" height="66" alt="轮子2" style="position:relative; left:100px; top:-100px;" class="wheel" />
+			<img src="images/wheel-3.png" width="96" height="96" alt="轮子3" style="position:absolute;  margin-top:220px; margin-left:-30px;" class="wheel"/>
+			<img src="images/wheel-4.png" width="72" height="72" alt="轮子4" style="position:absolute; margin-top:280px; margin-left:-30px;" class="wheel"/>
+		</div>
+	</div>
+	<!--section (page2) -->
+	<div class="section">
+		<div class="box2">
+			<img src="images/cloud.png" width="586" height="156" alt="云" class="cloud" style="position:relative; top:-300px; left:180px;"  />
+			<img src="images/map.png" width="412" height="259" alt="地图" style="position:relative; margin-top:200px; left:-300px;" />
+			<img src="images/nail.png" width="160" height="193" alt="地图示记" style="position:absolute; top:350px; left:880px;" class="nail" />
+		</div>
+	</div>
+	<!--section (page3)-->
+	<div class="section">
+		<div class="box3">
+			<img src="images/fun.png" width="304" height="138" alt="标专" class="fun" style="margin-top:200px;"/>
+			<img src="images/shop.png" width="344" height="284" alt="商店" style=" position:relative;top:60px; z-index:999;" class="shop" />
+			<img src="images/v-phone.png" width="559" height="116" alt="苹果手机" style="position:relative; z-index:99; " />
+
+		</div>
+	</div>
+	<!--section (page4) -->
+	<div class="section">
+		<div class="box4">
+			<img src="images/phone_1.png" width="220" height="105" alt="苹果手机" style="position:absolute; top:305px; margin-left:-112px;transform:rotate(30deg); transform-origin:bottom right;" class="phone1" />
+			<img src="images/phone_2.png" width="200" height="277" alt="苹果手机" style="position:absolute; top:405px; margin-left:-100px; z-index:999"/>
+			<img src="images/gift_1.png"  width="117" height="185" alt="礼物"  style="position:absolute; top:495px; left:700px; z-index:99" class="gift1"/>
+			<img src="images/gift_2.png" width="103" height="126" alt="礼物2"   style="position:absolute;top:550px; z-index:99; left:1100px;" class="gift2"/>
+			<img src="images/ballon.png" width="229" height="445" alt="气球"   style="position:absolute; z-index:9999; left:800px; top:70px;" class="ballon"/>
+		</div>
+	</div>
+
+</div>
+<!--Tz_wrap end-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/demo.js"></script>
+</body>
+</html>

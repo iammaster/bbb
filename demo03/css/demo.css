@@ -1,0 +1,7 @@
+*{ margin:0; padding:0; list-style:none;}
+body{background:url("../images/bodyBg.jpg");}
+.Tz_content {width:640px;height:400px;margin:150px auto;}
+.Tz_content ul {list-style:none;}
+.Tz_content ul li {width:200px;height:120px;float:left;margin:10px 0px 0px 10px;}
+.Tz_content .item {width:200px;height:120px;cursor:pointer;background:#ccc;}
+.Tz_content .item img {width:200px;height:120px;border-radius:6px;}

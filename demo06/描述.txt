@@ -1,0 +1,1 @@
+基于jQuery实现的模拟3D场景的轮播切换特效，适用于各大网站的banner效果，兼容360、FireFox、Chrome、Safari、Opera等内核浏览器，不支持IE7及以下浏览器。

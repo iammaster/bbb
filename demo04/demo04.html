@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content="jquery图片上传">
+		<meta name="Description" content="基于jQuery及 input表单文件上传实现的类似QQ空间相册上传图片的特效，
+支持多图片上传，提供视频教程，源码，和详细解释">
+		<title>jquery仿QQ空间相册图片上传视频教程_湖南潭州教育Web前端</title>
+		<link rel="stylesheet" href="css/demo.css" />
+	</head>
+	<body>
+		<div id="Tz_box">
+			<div class="upload">
+				<a href="javascript:;">
+					<span>选择照片</span>
+					<input type="file" multiple="true" id="Tz_btn" onchange="uploads(this)">
+				</a>
+				<p>按住Ctrl可选多张图片</p>
+			</div>
+			<div id="Tz_imgs"></div>
+		</div>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>

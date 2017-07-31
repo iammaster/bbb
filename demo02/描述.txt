@@ -1,0 +1,1 @@
+基于css3 transform变换、transition过渡、before/after伪类的导航展示特效，新颖别致。兼容360、FireFox、Chrome、Safari、Opera等内核浏览器，不支持IE9及以下浏览器。

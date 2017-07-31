@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/*实际模块*/
+.box1{ width:500px; height:550px;  margin:0px auto;}
+.box2{ width:1050px; height:550px;  margin:0px auto; overflow:hidden; }
+.box3{ width:550px; height:1050px;  margin:0px auto;overflow:hidden; }
+.box4{ width:550px; height:550px;  margin:0px auto; overflow:hidden; }
+/*页面*/
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+/*初始化动画 ph*/
+.ph1{ animation:ph 2.5s;-webkit-animation:ph 2.5s;}
+@keyframes ph{
+	0%{ transform:translateY(-840px);-webkit-transform:translateY(-840px); }
+	100%{transform:translateY(0px);-webkit-transform:translateY(0px);}
+	}
+.ph2{ animation:ph2 2.5s paused;-webkit-animation:ph2 2.5s paused; }
+@keyframes ph2{
+	0%{ transform:translateY(0px); -webkit-transform:translateY(0px);}
+	100%{transform:translateY(-840px);-webkit-transform:translateY(-840px);}
+	}
+.wheel{animation:spin 5s linear infinite 2.5s;-webkit-animation:spin 5s linear infinite 2.5s;}
+@keyframes spin {
+  100% {transform: rotate(1turn);-webkit-transform: rotate(1turn); }
+  }
+  	
+.nail{ animation:nai 2.5s paused;-webkit-animation:nai 2.5s paused}
+@keyframes nai{
+	0%{ transform:translateY(-240px);-webkit-transform:translateY(-240px)}
+	100%{transform:translateY(0px);-webkit-transform:translateY(0px)}
+	}
+	
+.cloud{ animation:clou 2.5s paused;-webkit-animation:clou 2.5s paused}
+@keyframes clou{
+	0%{ transform:translateX(700px);-webkit-transform:translateX(700px)}
+	100%{transform:translateX(0);-webkit-transform:translateX(0)}
+	}
+  
+.shop{animation:shop 2.5s paused;-webkit-animation:shop 2.5s paused}
+@keyframes shop{
+	0%{ transform:translateY(-640px);-webkit-transform:translateY(-640px)}
+	100%{transform:translateY(0px);-webkit-transform:translateY(0px)}
+	}
+	
+.fun{ animation:fu 2.5s paused;-webkit-animation:fu 2.5s paused}
+@keyframes fu{
+	0%{ transform:translateY(200px); opacity:0.1;-webkit-transform:translateY(200px)}
+	100%{transform:translateY(0px); opacity:1;-webkit-transform:translateY(0px)}
+	}
+	
+.gift1{ animation:gif1 2.5s paused;-webkit-animation:gif1 2.5s paused}
+@keyframes gif1{
+	0%{ transform:translateX(200px);-webkit-transform:translateX(200px)}
+	100%{transform:translateX(0);-webkit-transform:translateX(0)}
+	}
+	
+.gift2{ animation:gif2 2.5s paused;-webkit-animation:gif2 2.5s paused}
+@keyframes gif2{
+	0%{ transform:translateX(-200px);-webkit-transform:translateX(-200px)}
+	100%{transform:translateX(0);-webkit-transform:translateX(0)}
+	}
+	
+.ballon{ animation:bal 2.5s paused;-webkit-animation:bal 2.5s paused}
+@keyframes bal{
+	0%{ transform:translateY(400px);-webkit-transform:translateY(400px) }
+	100%{transform:translateY(0px); -webkit-transform:translateY(0px)}
+	}
+	
+.phone1{ animation:ph1 2.5s paused;-webkit-animation:ph1 2.5s paused}
+@keyframes ph1{
+	0%{ transform: rotate(0deg);-webkit-transform: rotate(0deg)}
+	100%{transform: rotate(30deg); -webkit-transform: rotate(30deg)}
+	}

@@ -1,0 +1,1 @@
+基于jQuery实现的轮播切换特效，来源于京东商城，适用于各大网站首页banner轮播项目。兼容360、FireFox、Chrome、Safari、Opera等内核浏览器，IE7及其以上浏览器。

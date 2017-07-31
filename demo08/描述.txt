@@ -1,0 +1,1 @@
+基于jQuery自定义动画实现的图片展示边框特效，清新别致。兼容360、FireFox、Chrome、Safari、Opera等内核浏览器，不支持IE8及以下浏览器。

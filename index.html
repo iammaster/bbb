@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页102功能和css特效源代码</title>
+
+    <style type="text/css">
+     *{margin:0px;padding:0px;}
+        #ul{width:90%;padding: 10px 20px;}
+        #ul li{ display: block;float: left;text-align: center;min-width: 140px;height:30px;line-height: 25px;border: 1px solid #ddd;border-radius:5px;list-style: none;padding:5px;margin:5px;    font-family: microsoft yahei;}
+         #ul li:hover a{color:#fff;font-weight:bold;}
+        #ul li:hover{background: #077911;color:#fff; font-weight:bold;cursor: pointer;  transform: scale(0.90);box-shadow:2px 2px 2px #999;}
+      #ul li:active{ transform: scale(.78);}
+        #ul li a{text-decoration: none;}
+
+    </style>
+    <script type="text/javascript" src="demo01/js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <ul id="ul">
+
+
+
+
+        </ul>
+
+    </div>
+      <script type="text/javascript">
+ $(function(){
+    for(var i=1;i<=102;i++){
+        if(i>=10){
+        var str='   <li onclick="window.location.href=\'demo'+i+'/demo'+i+'.html\' "><a href="demo'+i+'/demo'+i+'.html" target="_self">demo'+i+'</a></li>';
+    }else{
+          var str='   <li  onclick="window.location.href=\'demo0'+i+'/demo0'+i+'.html\' "><a href="demo0'+i+'/demo0'+i+'.html" target="_self">demo0'+i+'</a></li>';
+    }
+
+        $("#ul").append(str);
+
+    }
+ })
+      </script>
+</body>
+</html>

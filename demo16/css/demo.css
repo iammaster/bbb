@@ -1,0 +1,5 @@
+*{ margin:0; padding:0;}
+body{ background: url("../images/bg.jpg") no-repeat center 30%;}
+a,a:visited{ border: 0; margin: 0; padding: 0;outline: none;}/*outline 防止a标签点击后留下难看的蓝色虚框*/
+#Tz_box{ width:100%; height:auto; position:absolute; bottom:0; text-align:center;}
+#Tz_box img{ width:64px;}
