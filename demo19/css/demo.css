@@ -1,0 +1,7 @@
+*{ margin:0px;padding:0px; }
+html,body{ width:100%; height:100%; }
+body{ background:url("../images/bg.jpg"); background-size:100% 100%; overflow:hidden; }
+#Tz_heart{ width:50px; height:50px; background:url("../images/0.png"); left: 780px; top: 28px; position:relative; }
+.snowfall-flakes{/*.class类选择器*/ position:relative; width:20px !important;height:18px !important; }
+.snowfall-flakes:before,.snowfall-flakes:after{ content:"";/*不管有没有内容都必须写这句*/ width:10px; height:16px; position:absolute; background: #ff615f; display:block;/*块级元素*/ border-radius:10px 10px 0 0;/*圆角:左上 右上 右下 左下*/ transform:rotate(-45deg);/*css3变换:旋转*/ left:10px;/*方位值:距离参考物左端的距离*/ top:0px;/*距离参考物上端的距离*/ }
+.snowfall-flakes:before{ transform:rotate(45deg); left:14px; }
