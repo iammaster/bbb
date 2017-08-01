@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Html5视频播放器开发_湖南潭州教育Web前端</title>
+		<meta name="Keywords" content="Video视频播放器，Html5视频播放器">
+		<meta name="description" content="一款利用H5 video配合原生js制作的网页视频播放器,功能完善
+暂停,播放,多列表播放,音量调节,快速选择视频等功能">
+		<link rel="stylesheet"  type="text/css" href="css/demo.css">
+	</head>
+	<body>
+	<!--Tz_box-->
+	<div id="Tz_box">
+		<!--Tz_wrap-->
+		<div id="Tz_wrap">
+			<video width="100%" height="100%" src="video/tz.mp4" >
+				你的浏览器不支持video标签，请升级或者更换浏览器。
+			</video>
+			<!--播放列表-->
+			<div id="list">
+				<ul>
+					<li class="on">喜羊羊与灰太狼第1集</li>
+					<li>喜羊羊与灰太狼第2集</li>
+					<li>喜羊羊与灰太狼第3集</li>
+					<li>喜羊羊与灰太狼第4集</li>
+					<li>熊出没第1集</li>
+					<li>熊出没第2集</li>
+				</ul>
+				<a id="tubiao" href="javascript:;"></a>
+			</div>
+			<div id="control">
+				<div id="progress">
+					<span id="currentTime">00:00:00</span>
+					<div id="bottom">
+						<div id="pCover"></div>
+						<div id="pSlider"></div>
+					</div>
+					<span id="allTime">00:00:00</span>
+				</div>
+				<div id="content">
+					<div id="play">
+						<a href="javascript:;" id="up"></a>
+						<a href="javascript:;" id="playing" class="pauseOnOff"></a>
+						<a href="javascript:;" id="down"></a>
+						<a href="javascript:;" id="stop" style="display: none"></a>
+						<span>/</span>
+					</div>
+					<div id="volume">
+						<a href="javascript:;" id="icon"></a>
+						<div id="vProgress">
+							<div id="vCover"></div>
+							<div id="vSlider"></div>
+						</div>
+					</div>
+					<div id="fullScreen"></div>
+				</div>
+			</div>
+		</div>
+		<!--Tz_wrap end-->
+	</div>
+	<!--Tz_box end-->
+	<script type="text/javascript" src="js/demo.js"></script>
+	</body>
+</html>

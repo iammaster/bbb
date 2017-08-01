@@ -1,0 +1,42 @@
+*{margin:0px; padding:0px;}
+ul,li{list-style: none}
+a{text-decoration: none;}
+body{ background-color: #292929; -webkit-user-select: none;}
+#Tz_box{ overflow: hidden; width: 880px; background-color: #181818; height: 560px; margin: 40px auto;}
+#Tz_wrap{ position:relative; padding: 0px; width:880px; height:560px; overflow:hidden; /*border:1px solid red;*/ }
+h1{ width:100%; margin:0 auto; text-align:center; color: #050005; text-shadow: 1px 2px 5px #000406; }
+video{ height: 500px; }
+#list{ position:absolute; right:-195px; top:2px; background: rgba(255, 255, 255, 0.35); transition:all 0.5s; }
+#list ul{ padding: 30px 0; height:436px; }
+#list li{ width:187px; height:40px; font-family: 'Microsoft yahei'; padding-left:8px ; line-height: 40px; border-bottom:1px dashed #807f80; border-top:1px dashed #807f80; font-weight: bold; font-size: 14px; color: #000000; cursor:pointer; text-overflow:ellipsis;/*超出部分省略号显示*/ white-space:nowrap;/*禁止换行*/ overflow:hidden;/*超出隐藏*/ }
+#list li.on{ background: rgba(39, 39, 41, 0.89); }
+#tubiao{ position:absolute; top:167px; left:-16px; width:16px; height:67px; background:url("../images/tubiao.png") no-repeat; }
+#control{ width:100%; height:60px;position: absolute; bottom: 0px; /*border:1px solid red;*/ }
+#progress{ width:100%; height:20px; position: relative;}
+#progress span{position: absolute; top: 30px; float:left; height:20px; width:85px; line-height:20px; text-align:center; line-height:20px; color: rgba(255, 255, 255, 0.56); font-weight: bold; }
+#progress #currentTime{ left: 200px;position: absolute;}
+#progress #allTime{ left: 288px;position: absolute;}
+#bottom{ float:left; position:relative; display:inline-block; width:880px; height:20px; background-color: rgba(102, 102, 109, 0.32);   }
+#bottom #pCover{ position:absolute; top:0px; left:0px; width:0px; height:100%;  background: rgba(101, 133, 33, 0.59); }
+#bottom #pSlider{ position:absolute; top:0px; left:0px; width:20px; height:20px; background: rgba(255, 255, 255, 0.75); border-radius:10px; cursor:pointer; }
+#content{ width: 880px; height: 50px;overflow: hidden }
+#play{ float:left;margin-left: 10px; }
+#volume{ float: left;margin-left: 300px}
+#play span{position: absolute; width: 32px; height: 32px;color: #807f80;font-size: 28px;font-weight:bold;line-height: 32px; top: 22px; left: 281px;}
+#play a,#volume a,#fullScreen{ width: 32px; height: 32px; overflow: hidden; float: left;display: block;margin: 3px 8px;cursor: pointer}
+#fullScreen{ background: url("../images/qp.png") no-repeat center/80%; float: right;}
+#play a#up{ background: url("../images/upa.png") no-repeat center/80%;}
+#play a#up:hover{ background: url("../images/upb.png") no-repeat center/80%; }
+#play a#playing{background: url("../images/palya.png") no-repeat center/80%;}
+#play a#playing:hover{background: url("../images/playb.png") no-repeat center/80%;}
+#play a#down{background: url("../images/downa.png") no-repeat center/80%;}
+#play a#down:hover{background: url("../images/downb.png") no-repeat center/80%;}
+#play a#playing.pause{ background: url("../images/stopa.png") no-repeat center/80%;}
+#play a#playing.pause:hover{ background: url("../images/stopb.png") no-repeat center/80%;}
+/*#play a#stop{background: url("../images/stopa.png") no-repeat center/80%;}
+#play a#stop:hover{background: url("../images/stopb.png") no-repeat center/80%;}*/
+#volume a#icon{background: url("../images/icona.png") no-repeat center/80%;}
+#volume #vProgress{ float: left; width: 130px; height: 10px; background-color: #e8e8e8;margin: 12px 0;position: relative;}
+#vProgress #vCover{ position:absolute; top:0px; left:0px; width:130px; height:10px; background: #658521; }
+#vProgress #vSlider{ position:absolute; top:-1px; left:120px; width:12px; height:12px; background: #4c4c4c; border-radius:10px; cursor:pointer; }
+#introduce{ position:fixed; top:30%; right:5%; width:200px; height:100px; }
