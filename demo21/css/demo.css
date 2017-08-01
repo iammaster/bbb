@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#Tz_music{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:url("../images/bg.jpg") no-repeat;
+	background-size:cover;
+}
+header{
+	width:10rem;
+	height:2.1rem;
+	color:#fff;
+	text-align:center;
+}
+header h3{
+	font-size:0.5rem;
+	line-height:1.3rem;
+}
+header p{
+	font-size:0.3rem;
+}
+.singer{
+	width:8rem;
+	height:8rem;
+	border:2px solid #fff;
+	margin:auto;
+	border-radius:50%;
+}
+.singer.rotate{
+	animation:rot 10s linear infinite;
+}
+@keyframes rot{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+.singer div{
+	width:7.6rem;
+	height:7.6rem;
+	background:rgba(255,255,255,0.5);
+	margin:0.2rem auto;
+	border-radius:50%;
+	text-align:center;
+}
+.singer div img{
+	width:7rem;
+	height:7rem;
+	border-radius:50%;
+	transform:translateY(0.3rem);
+}
+.progress{
+	width:9rem;
+	height:0.1rem;
+	background:#606;
+	margin:0.8rem auto;
+}
+.progress .bg{
+	width:0rem;
+	height:0.1rem;
+	background:#6c6;
+}
+.progress .bar{
+	width:0.2rem;
+	height:0.2rem;
+	border-radius:50%;
+	background:#fff;
+	transform:translate(0rem,-0.15rem);
+	-webkit-transform:translate(0rem,-0.15rem);
+}
+.btn{
+	width:8rem;
+	margin:auto;
+}
+@font-face {font-family: 'iconfont';
+src: url('../iconfont/iconfont.eot'); /* IE9*/
+src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+width:1.5rem;
+height:1.5rem;
+float:left;
+font-family:"iconfont" !important;
+font-style:normal;
+-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px;
+-moz-osx-font-smoothing: grayscale;
+color:#fff;
+font-size:1.5rem;
+margin:0px 0.5rem;
+}

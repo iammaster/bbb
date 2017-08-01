@@ -1,0 +1,42 @@
+<!doctype html><!--声明文档类型：html-->
+<html lang="en">
+	<head><!--头部-->
+		<meta charset="UTF-8">
+		<title>HTML5移动端音乐播放器app开发_湖南潭州教育Web前端</title>
+		<meta name="Keywords" content="音乐播放器，audio音乐播放器">
+		<meta name="Description" content="HTML5移动端音乐播放器app开发，rem自适应各个移动端设备！兼容各移动端浏览器！">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0,minimum-scale=1.0">
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth/10 +"px";
+		</script>
+		<link rel="stylesheet" href="css/demo.css">
+	</head>
+	<body>
+		<div id="Tz_music">
+			<!-- header start -->
+			<header>
+				<h3>爱不可及</h3>
+				<p>F. W 王菲-爱不可及</p>
+			</header>
+			<!-- end header -->
+			<section class="singer">
+				<div>
+					<img src="images/tx.jpg">
+				</div>
+			</section>
+			<section class="progress">
+				<div class="bg"></div>
+				<div class="bar"></div>
+			</section>
+			<section class="btn">
+				<div class="prev iconfont">&#xe6de;</div>
+				<div class="play iconfont">&#xe60d;</div>
+				<div class="pause iconfont" style="display:none">&#xe62f;</div>
+				<div class="next iconfont">&#xe6dd;</div>
+			</section>
+			<audio src="mp3/刘珂矣 - 半壶纱.mp3" id="myMusic"></audio>
+		</div>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
