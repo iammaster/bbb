@@ -1,0 +1,1 @@
+基于原生js结合css3动画过渡属性实现的一款华丽的鼠标跟随导航特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

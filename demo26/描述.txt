@@ -1,0 +1,1 @@
+基于原生js结合css3 3D变换、自定义动画实现的3D划桨式轮播切换特效，高端华丽。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。
