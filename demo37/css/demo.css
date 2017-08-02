@@ -1,0 +1,12 @@
+*{ margin:0; padding:0;}
+body,html{ height:80%; background:url("../images/bg.jpg"); background-size:cover; }
+body{ overflow:hidden; }
+li{ list-style:none; }
+#Tz_wrap{ width:90%; height:90%; position:absolute; top:5%; left:5%; }
+#Tz_wrap ul li{ width:125px; height:125px; box-shadow:0 0 1px #000; position:absolute; transition:1s left , 1s top; transform:rotate(-30deg); -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; cursor: pointer; }
+#Tz_wrap ul li img{ transform:scale(0.92); display: block; border-radius: 10px; -webkit-border-radius:10px; -moz-border-radius:10px; display: block; border-radius:10px; transition:1s transform; }
+#btn{ display:none; }
+#btn input{ position:fixed; font-family:'Microsoft yahei'; top:50%; margin-top: -45px; background-color: rgba(221, 221, 221, 0.6); border: 0px; width: 40px; height: 90px; font-size: 30px; line-height: 90px; cursor: pointer; }
+#btn input:hover{ background-color: rgba(0, 0, 0, 0.54); color:#fff }
+#left{ left:0; -webkit-border-radius:0 5px 5px 0; -moz-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0; }
+#right{ right:0; -webkit-border-radius: 5px 0 0 5px ; -moz-border-radius: 5px 0 0 5px ; border-radius: 5px 0 0 5px ; }

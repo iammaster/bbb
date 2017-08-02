@@ -1,0 +1,1 @@
+基于jQuery实现的拖拽导航切换内容特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。
