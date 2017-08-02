@@ -1,0 +1,1 @@
+基于jQuery实现的鼠标悬浮手风琴及背景换肤特效，高端大气，适用于个各网站，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。

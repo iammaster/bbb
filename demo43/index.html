@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>省市县三级联动</title>
+
+</head>
+<body>
+<select name="sheng" id="sheng">
+    <option value="">省</option>
+</select>
+<select name="shi" id="shi">
+    <option value="">市</option>
+</select>
+<select name="xian" id="xian">
+    <option value="">县</option>
+</select>
+<button id="maker">生成地址</button>
+<br>
+<div id="addre"></div>
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="js/areaData.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var addre = '';
+        var $maker = $('#maker');
+        var $addre = $('#addre');
+        var sheng = areaData.sheng;
+        var Slength = sheng.length;
+        var $sheng = $('#sheng');
+        var $shi = $('#shi');
+        var $xian = $('#xian');
+        var shiIndex = 0;
+        var shengText,shiText,xianText;
+        for (var i = 0; i < Slength; i++) {
+            var $option = ('<option value=' + (i + 1) + '>' + sheng[i] + '</option>>');
+            $sheng.append($option);
+        }
+        ;
+        $sheng.change(function () {
+            shiIndex = this.selectedIndex - 1;
+             shengText=$sheng.find("option:selected").text();
+            if (shiIndex < 0) {
+
+            } else {
+
+                var shi = areaData.shi['a_' + shiIndex];
+                $shi.html('<option value="">市</option>');
+                $xian.html('<option value="">县</option>');
+                for (var i = 0; i < shi.length; i++) {
+                    var $option = ('<option value=' + (i + 1) + '>' + shi[i] + '</option>>');
+                    $shi.append($option);
+                }
+                ;
+            }
+            ;
+
+        });
+        $shi.change(function () {
+            var index = this.selectedIndex - 1;
+             shiText=$shi.find("option:selected").text();
+            if (index < 0) {
+
+            } else {
+                var xian = areaData.xian['a_' + shiIndex + '_' + index];
+                $xian.html('<option value="">县</option>');
+                for (var i = 0; i < xian.length; i++) {
+                    var $option = ('<option value=' + (i + 1) + '>' + xian[i] + '</option>>');
+                    $xian.append($option);
+                }
+                ;
+            }
+            ;
+
+        });
+        $xian.change(function () {
+             xianText=$xian.find("option:selected").text();
+        });
+
+        $maker.click(function () {
+               $addre.html('您选择的位置是:'+shengText+'-'+shiText+'-'+xianText);
+        });
+    });
+
+</script>
+</body>
+</html>

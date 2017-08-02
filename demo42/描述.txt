@@ -1,0 +1,1 @@
+基于jQuery结合css3背景渐变属性实现的进度条加载特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE8及以下浏览器。

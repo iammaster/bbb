@@ -1,0 +1,1 @@
+基于jQuery实现的导航吸顶盒特效，适合于各大商场及企业网站。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。
