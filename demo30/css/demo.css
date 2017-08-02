@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	height:100%;
+}
+body{
+	height:100%;
+	background:url("../images/bg.jpg") no-repeat;
+	background-size:cover;
+}
+#Tz_box{
+	position:fixed;
+	left:350px;
+	top:60px;
+	width:800px;
+	height:560px;
+	background:rgba(60,31,13,0.9);
+	border:1px solid #cb986d;
+	border-radius:10px;
+	overflow:hidden;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.Con{margin:20px; height:520px;overflow:hidden;}
+.content{
+	width:750px;
+	
+}
+.content h3{
+	line-height:50px;
+	color:#cb986d;
+	font-family:"微软雅黑";
+}
+.content p{
+	color:#cfb794;
+	font-size:12px;
+	line-height:30px;
+}
+.content img{
+	margin:10px 30px;
+}
+.scroll{
+	position:absolute;
+	top:40px;
+	right:8px;
+	width:16px;
+	height:480px;
+	background:url("../images/scroll_bar.png");
+}
+.scroll .bar{
+	position:absolute;
+	left:-5px;
+	top:10px;
+	width:26px;
+	height:12px;
+	background:url("../images/scroll.png");
+	cursor:move;
+}

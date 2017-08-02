@@ -1,0 +1,47 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:#434343;
+}
+#Tz_box{
+	width:1120px;height:600px;
+	margin:100px auto;
+	padding: 20px;
+	background-color:#222;
+	border-radius: 20px;
+	box-shadow: 0 0 7px #fff;
+	overflow: hidden;
+}
+.img{
+	width:350px;height:100%;
+	float:left;
+	margin-right:6px;
+}
+.last{
+	width:400px;
+}
+.hover{
+	position:relative;
+	overflow:hidden;
+}
+.img1{
+	width:350px;height:250px;margin-bottom:10px;
+}
+.img2{
+	width:350px;height:180px;margin-bottom:10px;
+}
+.img3{
+	width:400px;height:340px;margin-bottom:10px;
+}
+.img21{
+	height:220px;margin-bottom:10px;
+}
+.img12{
+	height:340px;
+}
+img{
+	position:absolute;
+	left:0px;top:0px;opacity:1;
+}
