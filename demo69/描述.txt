@@ -1,0 +1,1 @@
+基于jQuery结合css3实现的商品全选反选功能，用户体验效果更好。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

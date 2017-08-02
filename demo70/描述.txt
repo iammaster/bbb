@@ -1,0 +1,1 @@
+基于jQuery结合css3实现的苹果相册展示特效，新颖别致。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

@@ -1,0 +1,1 @@
+基于HTML5绘图标签canvas结合原生js实现的星光连线背景特效，经典华丽。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

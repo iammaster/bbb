@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--声明当前页面的编码格式 国际编码 UTF-8  中文编码 GBK-->
+	<meta charset="utf-8">
+	<!--声明当前页面的三要素-->
+	<meta name="Keywords" content="jquery购物车，天猫购物车">
+	<meta name="description" content="本效果主要模仿天猫天抛物线模式购物车效果。效果逼真，实用性强，而且还还有源码，视频讲解功能">
+	<title>jquey抛物线模式天猫购物车</title>
+	  <link rel="stylesheet" href="css/style.css"/>
+</head>	
+<body>
+	<!--头部banner制作 start-->
+	<div class="banner"></div>
+	<!--头部banner制作 end-->
+	<!--商品列表区域 start-->
+	<div class="par_list">
+		<ul>
+			<li>
+				<img src="images/1.jpg" width="220" height="220" alt="美女" />
+				<p class="title">2015夏季新品海澜之家男装正品1</p>
+				<p class="jg"><font>￥193.0</font><span>加入购物车</span></p>
+			</li>
+			<li>
+				<img src="images/2.jpg" width="220" height="220" alt="美女" />
+				<p class="title">2015夏季新品海澜之家男装正品2</p>
+				<p class="jg"><font>￥175.0</font><span>加入购物车</span></p>
+			</li>
+			<li>
+				<img src="images/3.jpg" width="220" height="220" alt="美女" />
+				<p class="title">2015夏季新品海澜之家男装正品3</p>
+				<p class="jg"><font>￥389.0</font><span>加入购物车</span></p>
+			</li>
+			<li>
+				<img src="images/4.jpg" width="220" height="220" alt="美女" />
+				<p class="title">2015夏季新品海澜之家男装正品4</p>
+				<p class="jg"><font>￥499.0</font><span>加入购物车</span></p>
+			</li>
+			
+		</ul>
+	
+	</div>
+	<!--商品列表区域 end-->
+	<!--商品购物车 start-->
+		<div class="carbox">
+			<div class="left"><span>加入购物车</span></div>
+			<div class="con">
+				<!--<dl>
+					<dt><img src="images/1.jpg" width="60" height="60" alt="美女" /></dt>
+					<dd class="ti">2015夏季新品海澜之家男装正品1</dd>
+					<dd class="money">￥193.0</dd>
+					</dl>-->
+			</div>
+		</div>
+	<!--商品购物车 end-->
+	<script src="js/jquery.js"></script>
+	<script src="js/tz_fly.js"></script>
+	<script>
+	var k =0 ;
+	$(".carbox .left span").click(function(){
+		if(k==0){
+			$(".carbox").animate({right:"0px"},500);
+			k=1;
+		}else if(k==1){
+			$(".carbox").animate({right:"-220px"},500);
+			k=0;
+		}
+		
+	});
+	$(".par_list ul li p.jg span").click(function(){
+		var img = $(this).parent().siblings("img").attr("src");
+		var text = $(this).parent().siblings("p.title").html();
+		var money = $(this).siblings("font").html();
+		$(".con").append("<dl><dt><img src='"+img+"' width='60' height='60' alt='美女' /></dt><dd class='ti'>"+text+"</dd><dd class='money'>"+money+"</dd></dl>");
+		play(event);
+	})
+	//抛物线函数
+	function play(event){
+		var s_left =event.clientX;//获取鼠标左边的位置
+		var s_top =event.clientY;//获取鼠标左边的位置
+		var e_left =$(".carbox .left span").offset().left;
+		var e_top =$(".carbox .left span").offset().top;
+		var _this =$(event.target);//当前到点击的js对象
+		var img = _this.parent().siblings("img").attr("src");
+		var flyer =$("<img src='"+img+"' width='50' style='border-radius:50%'/>");//创建图片对象
+
+		flyer.fly({
+			start:{
+				left:s_left,
+				top:s_top
+			},
+			end:{
+				left:e_left,
+				top:e_top
+			},
+			onEnd:function(){
+				flyer.fadeOut("slow",function(){
+					$(this).remove();
+				});
+			}
+		})
+	}
+	</script>
+</body>
+</html>

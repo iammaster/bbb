@@ -1,0 +1,31 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+*{margin:0px;}
+body{background:url("../images/1.jpg");}
+#Tz_Message{width:602px;height:140px;padding:10px; background:#fff;  margin:100px auto; border-radius:5px;
+    position:relative;}
+#Tz_Message #MesCon{width:600px;height:100px; border:1px solid #ddd; border-radius:5px;}
+#Tz_Message #MesCon .imgBut{width:100px;height:100px; border-right:1px solid #ddd;float:left; font-size:12px; color:#666; text-align:center; line-height:150px; background:url("../images/tu.png") no-repeat 33px 30px;}
+#Tz_Message #MesCon .Edit{width:492px;height:94px; float:right;padding: 3px }
+
+#Tz_Message span.fb{width:80px;height:30px; background:#ff9933; color:#fff; text-align:center; line-height:30px;
+    display:block; margin-top:10px; float:right; border-radius:5px; font-size:12px; font-family:"微软雅黑";}
+#Tz_Message .upload{width:620px;height:220px; background:rgba(0,0,0,0.5); position:absolute;left:0px; top:160px;
+    box-shadow:0px 0px 10px #fff;display:none; }
+#Tz_Message .upload p{width:100%;  height: auto; position:absolute; left:0px; top:0px;color:#fff;  font-size:26px; text-align:center;line-height:220px;}
+#Tz_Message .upload img{margin:20px 8px; border:2px solid #fff;}
+
+.shuoshuo{width:600px; min-height:300px; border:1px solid #ddd; border-radius:5px; margin:10px auto; background:#fff; padding:20px; display:none;}
+.shuoshuo p{font-size: 16px;font-family: 'Microsoft Yahei';padding: 5px}
+.shuoshuo img{display: block;}
+.shuoshuo .box{border-bottom:1px dotted #ddd; font-size:14px; line-height:30px;}

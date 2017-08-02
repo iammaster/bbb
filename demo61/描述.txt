@@ -1,0 +1,1 @@
+基于canvas结合原生js实现的一个正弦函数图，HTML5新增绘图标签canvas的实例运用。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

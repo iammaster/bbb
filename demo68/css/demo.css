@@ -1,0 +1,40 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { }
+address, cite, em, i { font-style: normal; }
+small {  } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+#Tz_header { width: 1344px; height: 30px; margin: 0 auto; overflow: hidden; background-color: #ee1c24; }
+
+#Tz_header span { display: inline-block; float: right; margin-right: 130px; font-size: 14px; color: #e8e8e8; line-height: 30px; cursor: pointer; line-height: 30px }
+
+a { color: #ffffff; font-size: 14px; line-height: 30px }
+
+#Tz_header span.leftx{ float: left; margin-left: 100px }
+
+#Tz_body { width: 1344px; height: 603px; margin: 0px auto; background: url("../images/bg.png"); }
+
+#gray { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: absolute; top: 0px;
+    display: none; }
+
+#Tz_Login { width: 680px; height: 377px; overflow: hidden;display: none ;position:absolute;left:400px; top:150px;display:none;display:none}
+
+#Tz_Login .title{ cursor:move;height: 50px; background-color: #ee1c24; width: 100%;font-size: 14px;color: #fff;line-height: 50px;text-indent: 20px}
+#Tz_Login .title a{display: block; float: right; width: 17px; height: 17px;overflow: hidden; background:url("../images/close.png");margin: 18px}
+#Tz_Login .box{ width: 680px; height: 322px;margin: 0 auto; background: #fff;}
+.left{border-right:1px solid #d5d5d5; }
+.left,.right{ width: 259px; height: 180px; float: left; padding: 20px;margin: 20px; background-color: #ffffff;}
+.right{ background: url("../images/new.png") no-repeat center;}
+#Tz_Login p{margin: 5px 0;font-size: 12px;vertical-align: middle;line-height: 30px}
+#Tz_Login input.txt{font-size: 12px; background: #eeeeee none repeat scroll 0 0; border: 0 none; height: 30px; line-height: 30px; width: 210px;padding: 3px;margin-left: 6px}
+#Tz_Login input.check{ width:3px; height: 3px;margin: 12px 5px 0 30px;vertical-align: text-bottom}
+#Tz_Login p span{ float: right;margin:2px 30px 0 0;line-height: 30px;cursor: pointer}
+.reg{color: #fff; cursor: pointer; width: 70px; height: 30px;line-height: 30px;text-align: center; float: right;margin:10px 20px 0 0; background-color: #434343;font-size: 12px}
+.reg:hover{ background-color: #ee1c24;}
+.go{ width: 225px; height: 94px; float: left; background: url("../images/go.png");}

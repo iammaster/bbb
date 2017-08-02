@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>canvas结合原生js实现的星光吸附特效</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="jquery日历插件" />
+		<meta name="description" content="基于HTML5绘图标签canvas结合原生js实现的星光连线背景特效，经典华丽。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。"/>
+		<style type='text/css'>
+			*{ margin:0; padding:0;font-family:'Microsoft yahei';}
+			a{ text-decoration:none;}
+			a img{ display:block; border:none;}
+			li{ list-style:none;}
+			
+			#canvas{
+				background:#000;
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<canvas id='canvas'></canvas>
+		<script type="text/javascript">
+			
+			var can = document.getElementById('canvas');
+			var cxt = can.getContext('2d');
+
+			var w = can.width = window.innerWidth;
+			var h = can.height = window.innerHeight;
+
+			var num = 200; //生成点的个数
+			var data = []; //定义一个数组，准备用来存坐标
+			var move = {};
+			var speed = 3;
+			init();
+			window.onresize = init;
+			 function init(){
+				//生成num个点，并且存储初始坐标
+				data = [];
+				move = {};
+				w = can.width = window.innerWidth;
+				h = can.height = window.innerHeight;
+				for ( var i=0;i<num;i++ )
+				{
+					data[i] = {x:Math.random()*w , y:Math.random()*h , cX:Math.random()*speed*2-speed , cY:Math.random()*speed*2-speed , isLine:false };
+					Cricle(data[i].x,data[i].y);
+				};
+			 };
+			document.onmousemove = function(e){
+				move.x = e.clientX;
+				move.y = e.clientY;
+			};
+			document.onmouseleave = function(e){
+				move = {};
+			};
+			!function draw(){
+				cxt.clearRect(0,0,w,h);
+
+				for ( var i=0;i<num;i++ )
+				{
+					data[i].x += data[i].cX;
+					data[i].y += data[i].cY;
+					if ( data[i].x > w || data[i].x < 0 )data[i].cX = -data[i].cX;
+					if ( data[i].y > h || data[i].y < 0 )data[i].cY = -data[i].cY;
+					Cricle(data[i].x,data[i].y);
+					
+					for ( var j=i+1;j<num;j++ )
+					{
+						if ( (data[i].x-data[j].x)*(data[i].x-data[j].x) + (data[i].y-data[j].y)*(data[i].y-data[j].y) <= 50*50 )
+						{
+							line(data[i].x , data[i].y , data[j].x , data[j].y , false);
+						};
+					};
+					if ( move.x )
+					{
+						var l = (data[i].x-move.x)*(data[i].x-move.x) + (data[i].y-move.y)*(data[i].y-move.y);
+						if ( l < 200*200 && l > 100*100 )
+						{
+							var a = Math.max(Math.abs(data[i].cX) ,1);
+							var b = Math.max(Math.abs(data[i].cY) ,1);
+							data[i].cX = data[i].x>move.x?-a:a;
+							data[i].cY = data[i].y>move.y?-b:b;
+							data[i].isLine = true;
+						};
+					}else{
+						if ( data[i].isLine )
+						{
+							data[i].cX = Math.random()*speed*2-speed;
+							data[i].cY = Math.random()*speed*2-speed;
+							data[i].isLine = !data[i].isLine;
+						};
+					};
+				};
+				window.requestAnimationFrame( draw );
+			}();
+			
+			//画线
+			function line(x1,y1,x2,y2,isMove){
+				cxt.save();
+				var lin = cxt.createLinearGradient(x1,y1,x2,y2);
+				if ( !isMove )
+				{
+					lin.addColorStop(0,'#fff');
+					lin.addColorStop(1,'#333');
+				}else{
+					lin.addColorStop(0,'#fff');
+					lin.addColorStop(1,'#0bd2dd');
+				}
+				cxt.strokeStyle = lin;
+				cxt.beginPath();
+				cxt.moveTo(x1,y1);
+				cxt.lineTo(x2,y2);
+				cxt.stroke();
+				cxt.restore();
+			};
+
+			//画点
+			function Cricle(x,y){
+				cxt.save();
+				cxt.fillStyle = 'pink';
+				cxt.beginPath();
+				cxt.arc(x,y,0.5,0,2*Math.PI,true);
+				cxt.closePath();
+				cxt.fill();
+				cxt.restore();
+			};
+		</script>
+	</body>
+</html>

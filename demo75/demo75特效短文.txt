@@ -1,0 +1,3 @@
+三款纯HTML5+CSS3打造的loding效果,不需要js或者图片。
+主要使用@keyframes和transform动画制作。
+本特效支持各大主流浏览器,但不支持ie8以及以下版本。

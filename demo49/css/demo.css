@@ -1,0 +1,73 @@
+body {
+	font: 100% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	margin: 0;
+	background:fff;
+}
+
+.no-show {
+	display: none;
+}
+
+h1 {
+	width:900px;
+	margin: .5em auto 0;
+	padding: 10px 0 0;
+	background: url('images/cal_logo_1.png') left center no-repeat;
+	height: 43px;
+	line-height: 30px;
+	padding-left: 50px;
+	color: #ed7474;
+	font-size: 1.6em;
+}
+
+h2 {
+	margin: 0 0 .5em;
+	padding: 0;
+	color: #555;
+	font-size: 1.3em;
+}
+article {
+	display: block;
+	width: 960px;
+	margin: 20px auto;
+}
+
+.datepickers-cont {
+	margin: 0;
+	padding: 0;
+}
+
+.datepickers-cont td.part {
+	vertical-align: top;
+	padding: 0 1.4em 0 0;
+	height: 22em;
+}
+
+footer {
+	width: 900px;
+	display: block;
+	margin: 5em auto;
+	padding: 1em 2em;
+	color: #888;
+	font-size: .9em;
+	background: #f0f0f0;
+	border-radius: 1.5em;
+}
+
+footer a {
+	color: #666;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #000;
+}
+
+footer a:first-child {
+	font-weight: bold;
+}
+
+.cf:before,
+.cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; }

@@ -1,0 +1,1 @@
+基于jQuery实现的多图片无缝滚动特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。

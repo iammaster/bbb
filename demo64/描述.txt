@@ -1,0 +1,1 @@
+基于html5绘图标签 cnavas结合原生js实现的仿黑客帝国流星雨特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

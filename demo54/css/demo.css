@@ -1,0 +1,23 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0; padding: 0; }
+body{ background:url("../images/bg.jpg")}
+#Tz_sidebar { width: 230px; height: 100%; margin: 0; padding: 0;position: fixed; left:50px; top: 30px; }
+#Tz_sidebar ul li { width: 230px; display: block; background-color: #222d32; position: relative; }
+#Tz_sidebar ul li:hover > a { background-color: #1e282c; color: #ffffff; border-left-color: #3c8dbc }
+#Tz_sidebar > ul > li:after { content: ""; position: absolute; top: 12px; left: 10px; width: 0px; height: 0px; float: left; display: block; border: 8px solid; border-left-color: #ffffff; border-bottom-color: transparent; border-right-color: transparent; border-top-color: transparent; }
+#Tz_sidebar > ul > li.on:after { content: ""; position: absolute; top: 14px; left: 5px; width: 0px; height: 0px; float: left; display: block; border-left-color: transparent; border-bottom-color: transparent; border-right-color: transparent; border-top-color: #ffffff; }
+#Tz_sidebar ul li a { display: block; padding: 12px 5px 12px 35px; border-left: 3px solid transparent; color: #b8c7ce; font-size: 16px;
+    line-height: 14px }
+#Tz_sidebar ul li ul.menu > li > a { width: 227px; height: 30px; display: block; background-color: rgba(36, 94, 113, 0.73); position: relative; text-align: center; border-left: 3px solid transparent; color: #b8c7ce; font-size: 14px; display: block; cursor: pointer; padding: 0; line-height: 27px }
+#Tz_sidebar ul li ul.menu li:hover a { border-left-color: #ffffff; color: #000000 }
+#Tz_sidebar ul li ul { display: none; }

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="Keywords" content="jquery特效，jquey留言功能">
+	 <meta name="Description" content="一款模仿qq空间发表说说的特效,能够插入表情发表说说等
+使用jQuery制作完成,兼容各大主流浏览器">
+	 <title>jquery模拟qq空间说说留言发表功能</title>
+	 <link rel="stylesheet" href="css/demo.css"/>>
+ </head>
+ <body>
+ <!--Tz_message start-->
+	<div id="Tz_message">
+		<p>有什么新鲜事想告诉大家?</p>
+		<div class="edit" contenteditable="true"></div>
+		<div class="but">
+			<img src="images/bba_thumb.gif" class="imgface" />
+			<span class="msg_but">发表</span>
+			<div class="face">
+				<ul>
+					<li><img src="images/zz2_thumb.gif" title="[织]" width="" height="22" alt="#"></li>
+					<li><img src="images/horse2_thumb.gif" title="[神马]" width="" height="22" alt="#"></li>
+					<li><img src="images/fuyun_thumb.gif" title="[浮云]" width="" height="22" alt="#"></li>
+					<li><img src="images/geili_thumb.gif" title="[给力]" width="" height="22" alt="#"></li>
+					<li><img src="images/wg_thumb.gif" title="[围观]" width="" height="22" alt="#"></li>
+					<li><img src="images/vw_thumb.gif" title="[威武]" width="" height="22" alt="#"></li>
+					<li><img src="images/panda_thumb.gif" title="[熊猫]" width="" height="22" alt="#"></li>
+					<li><img src="images/rabbit_thumb.gif" title="兔子]" width="" height="22" alt="#"></li>
+					<li><img src="images/otm_thumb.gif" title="[奥特曼]" width="" height="22" alt="#"></li>
+					<li><img src="images/j_thumb.gif" title="[囧]" width="" height="22" alt="#"></li>
+					<li><img src="images/hufen_thumb.gif" title="[互粉]" width="" height="22" alt="#"></li>
+					<li><img src="images/liwu_thumb.gif" title="[礼物]" width="" height="22" alt="#"></li>
+					<li><img src="images/smilea_thumb.gif" title="呵呵]" width="" height="22" alt="#"></li>
+					<li><img src="images/tootha_thumb.gif" title="嘻嘻]" width="" height="22" alt="#"></li>
+					<li><img src="images/laugh.gif" title="[哈哈]" width="" height="22" alt="#"></li>
+					<li><img src="images/tza_thumb.gif" title="[可爱]" width="" height="22" alt="#"></li>
+					<li><img src="images/kl_thumb.gif" title="[可怜]" width="" height="22" alt="#"></li>
+					<li><img src="images/kbsa_thumb.gif" title="[挖鼻屎]" width="" height="22" alt="#"></li>
+					<li><img src="images/cj_thumb.gif" title="[吃惊]" width="" height="22" alt="#"></li>
+					<li><img src="images/shamea_thumb.gif" title="[害羞]" width="" height="22" alt="#"></li>
+					<li><img src="images/zy_thumb.gif" title="[挤眼]" width="" height="22" alt="#"></li>
+					<li><img src="images/bz_thumb.gif" title="[闭嘴]" width="" height="22" alt="#"></li>
+					<li><img src="images/bs2_thumb.gif" title="[鄙视]" width="" height="22" alt="#"></li>
+					<li><img src="images/lovea_thumb.gif" title="[爱你]" width="" height="22" alt="#"></li>
+					<li><img src="images/sada_thumb.gif" title="[泪]" width="" height="22" alt="#"></li>
+					<li><img src="images/heia_thumb.gif" title="[偷笑]" width="" height="22" alt="#"></li>
+					<li><img src="images/qq_thumb.gif" title="[亲亲]" width="" height="22" alt="#"></li>
+					<li><img src="images/sb_thumb.gif" title="[生病]" width="" height="22" alt="#"></li>
+					<li><img src="images/mb_thumb.gif" title="[太开心]" width="" height="22" alt="#"></li>
+					<li><img src="images/ldln_thumb.gif" title="[懒得理你]" width="" height="22" alt="#"></li>
+					<li><img src="images/yhh_thumb.gif" title="[右哼哼]" width="" height="22" alt="#"></li>
+					<li><img src="images/zhh_thumb.gif" title="[左哼哼]" width="" height="22" alt="#"></li>
+					<li><img src="images/x_thumb.gif" title="[嘘]" width="" height="22" alt="#"></li>
+					<li><img src="images/cry.gif" title="[衰]" width="" height="22" alt="#"></li>
+					<li><img src="images/wq_thumb.gif" title="[委屈]" width="" height="22" alt="#"></li>
+					<li><img src="images/t_thumb.gif" title="[吐]" width="" height="22" alt="#"></li>
+					<li><img src="images/k_thumb.gif" title="[打哈气]" width="" height="22" alt="#"></li>
+					<li><img src="images/bba_thumb.gif" title="[抱抱]" width="" height="22" alt="#"></li>
+					<li><img src="images/angrya_thumb.gif" title="[怒]" width="" height="22" alt="#"></li>
+					<li><img src="images/yw_thumb.gif" title="[疑问]" width="" height="22" alt="#"></li>
+					<li><img src="images/cza_thumb.gif" title="[馋嘴]" width="" height="22" alt="#"></li>
+					<li><img src="images/88_thumb.gif" title="[拜拜]" width="" height="22" alt="#"></li>
+					<li><img src="images/sk_thumb.gif" title="[思考]" width="" height="22" alt="#"></li>
+					<li><img src="images/sweata_thumb.gif" title="[汗]" width="" height="22" alt="#"></li>
+					<li><img src="images/sleepya_thumb.gif" title="[困]" width="" height="22" alt="#"></li>
+					<li><img src="images/sleepa_thumb.gif" title="[睡觉]" width="" height="22" alt="#"></li>
+					<li><img src="images/money_thumb.gif" title="[钱]" width="" height="22" alt="#"></li>
+					<li><img src="images/sw_thumb.gif" title="[失望]" width="" height="22" alt="#"></li>
+					<li><img src="images/cool_thumb.gif" title="[酷]" width="" height="22" alt="#"></li>
+					<li><img src="images/hsa_thumb.gif" title="[花心]" width="" height="22" alt="#"></li>
+					<li><img src="images/hatea_thumb.gif" title="[哼]" width="" height="22" alt="#"></li>
+					<li><img src="images/gza_thumb.gif" title="[鼓掌]" width="" height="22" alt="#"></li>
+					<li><img src="images/dizzya_thumb.gif" title="[晕]" width="" height="22" alt="#"></li>
+					<li><img src="images/bs_thumb.gif" title="[悲伤]" width="" height="22" alt="#"></li>
+					<li><img src="images/crazya_thumb.gif" title="[抓狂]" width="" height="22" alt="#"></li>
+					<li><img src="images/h_thumb.gif" title="[黑线]" width="" height="22" alt="#"></li>
+					<li><img src="images/yx_thumb.gif" title="[阴险]" width="" height="22" alt="#"></li>
+					<li><img src="images/nm_thumb.gif" title="[怒骂]" width="" height="22" alt="#"></li>
+					<li><img src="images/hearta_thumb.gif" title="[心]" width="" height="22" alt="#"></li>
+					<li><img src="images/unheart.gif" title="[伤心]" width="" height="22" alt="#"></li>
+					<li><img src="images/pig.gif" title="[猪头]" width="" height="22" alt="#"></li>
+					<li><img src="images/ok_thumb.gif" title="[ok]" width="" height="22" alt="#"></li>
+					<li><img src="images/ye_thumb.gif" title="[耶]" width="" height="22" alt="#"></li>
+					<li><img src="images/good_thumb.gif" title="[good]" width="" height="22" alt="#"></li>
+					<li><img src="images/no_thumb.gif" title="[不要]" width="" height="22" alt="#"></li>
+					<li><img src="images/z2_thumb.gif" title="[赞]" width="" height="22" alt="#"></li>
+					<li><img src="images/come_thumb.gif" title="[来]" width="" height="22" alt="#"></li>
+					<li><img src="images/sad_thumb.gif" title="[弱]" width="" height="22" alt="#"></li>
+					<li><img src="images/lazu_thumb.gif" title="[蜡烛]" width="" height="22" alt="#"></li>
+					<li><img src="images/clock_thumb.gif" title="[钟]" width="" height="22" alt="#"></li>
+					<li><img src="images/cake.gif" title="[蛋糕]" width="" height="22" alt="#"></li>
+					<li><img src="images/m_thumb.gif" title="[话筒]" width="" height="22" alt="#"></li>
+					<li><img src="images/weijin_thumb.gif" title="[围脖]" width="" height="22" alt="#"></li>
+					<li><img src="images/lxhzhuanfa_thumb.gif" title="[转发]" width="" height="22" alt="#"></li>
+					<li><img src="images/lxhluguo_thumb.gif" title="[路过这儿]" width="" height="22" alt="#"></li>
+					<li><img src="images/bofubianlian_thumb.gif" title="[bofu变脸]" width="" height="22" alt="#"></li>
+					<li><img src="images/gbzkun_thumb.gif" title="[gbz困]" width="" height="22" alt="#"></li>
+					<li><img src="images/boboshengmenqi_thumb.gif" title="[生闷气]" width="" height="22" alt="#"></li>
+					<li><img src="images/chn_buyaoya_thumb.gif" title="[不要啊]" width="" height="22" alt="#" width="" height="22" alt="#"></li>
+					<li><img src="images/daxiongleibenxiong_thumb.gif" title="[dx泪奔]" width="" height="22" alt="#"></li>
+					<li><img src="images/cat_yunqizhong_thumb.gif" title="[运气中]" width="" height="22" alt="#"></li>
+					<li><img src="images/youqian_thumb.gif" title="[有钱]" width="" height="22" alt="#"></li>
+					<li><img src="images/cf_thumb.gif" title="[冲锋]" width="" height="22" alt="#"></li>
+					<li><img src="images/camera_thumb.gif" title="[照相机]" width="" height="22" alt="#"></li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="msgBox">
+	</div>
+ <!--Tz_message end-->
+ </body>
+ <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+ <script type="text/javascript" src="js/demo.js"></script>
+</html>

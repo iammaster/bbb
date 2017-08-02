@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; }
+body{ background:#434343;}
+#Tz_warp { width: 600px; height: 350px; margin: 100px auto;padding: 20px;background-color:#eee;border-radius: 20px;box-shadow: 0 0 7px #fff;overflow: hidden; }
+
+#top { width: 600px; height: 220px; border-bottom: 1px solid #bbbbbb; font-family: 'Microsoft yahei'; }
+
+#top p span { font-size: 14px; color: #666666; border: 1px solid #999999; display: inline-block; padding: 8px; cursor: pointer; margin: 0px 1px 15px 0px; line-height: 20px; }
+
+#top p font { font-size: 14px; color: #000000; margin-right: 15px; border: none; text-align: left; padding: 0; }
+
+#top p span.on { background: url(../images/on.png) no-repeat right bottom; border: 2px solid #ff6600; padding: 7px; }
+
+#bottom { width: 600px; height: 100px; padding-top: 20px; font-family: 'Microsoft yahei'; }
+
+#bottom p font { font-size: 20px; margin-right: 20px; color: #ff6600; }
+
+#bottom p a { font-size: 14px; color: #000000; text-decoration: none; }
+
+#bottom p a i { margin: 0 5px; color: #9900cc; font-weight: bold; }
+
+#bottom button { display: block; width: 330px; height: 50px; background-color: #ff6600; border: 0px; margin-top: 20px; font-size: 20px; font-family: 'Microsoft yahei'; color: #ffffff; cursor: pointer; }

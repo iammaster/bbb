@@ -1,0 +1,1 @@
+基于原生js结合HTML5绘图标签canvas实现的鼠标跟随背景特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

@@ -1,0 +1,24 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { }
+address, cite, em, i { font-style: normal; }
+small {  } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0px; padding: 0px; }
+body { background-color: rgba(255, 255, 255, 0.62); }
+#Tz_Logo { width: 100%; /*宽*/ height: 74px; margin: 0; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; }
+#Tz_Logo ul { width: 1020px; height: 74px; margin: 0px auto; }
+#Tz_Logo ul li { width: 140px; height: 54px; list-style-type: none; float: left; font-size: 14px; font-family: "微软雅黑"; text-align: center; padding-top: 20px; background: url("../images/bg1.png") no-repeat right center; position: relative; }
+#Tz_Logo ul li span { color: #666666; display: block; font-size: 12px; }
+#Tz_Logo ul li a { color: #000000; text-decoration: none; }
+#Tz_Logo ul li.hover { background: #b80909; }
+#Tz_Logo ul li.hover a { color: #ffffff; }
+#Tz_Logo ul li.hover a span { color: #ffffff; }
+#Tz_Logo ul li .Menu { border: 1px solid #dddddd; position: absolute; top: 74px; left: 0px; display: none; }
+#Tz_box { margin: 0 auto; width: 1348px; height: 692px; background: url("../images/bg.png"); }

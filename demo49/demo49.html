@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="基于jQuery及jQuery.ui实现的多布局类型日历插件，灵活多变。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。" />
+	<meta name="keywords" content="jquery日历插件" />
+	<title>jQuery.ui实现的多布局类型日历插件</title>
+	<link href="css/jquery-ui-1.10.1_1.css" rel="stylesheet">
+	<link href="css/siena.datepicker_1.css" rel="stylesheet">
+	<link href="css/santiago.datepicker_1.css" rel="stylesheet">
+	<link href="css/latoja.datepicker_1.css" rel="stylesheet">
+	<link href="css/lugo.datepicker_1.css" rel="stylesheet">
+	<link href="css/cangas.datepicker_1.css" rel="stylesheet">
+	<link href="css/vigo.datepicker_1.css" rel="stylesheet">
+	<link href="css/nigran.datepicker_1.css" rel="stylesheet">
+	<link href="css/melon.datepicker_1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/demo.css">
+	
+</head>
+<body>
+
+	<h1>多类型日历插件库</h1>
+
+	<article>
+		<table class="datepickers-cont">
+			<tr>
+				<td class="part">
+					<h2>melon
+					</h2>
+					<div class="datepicker ll-skin-melon"></div>
+				</td>
+
+				<td class="part">
+					<h2>la toja</h2>
+					<div class="datepicker ll-skin-latoja"></div>
+				</td>
+
+				<td class="part">
+					<h2>santiago</h2>
+					<div class="datepicker ll-skin-santiago"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="part">
+					<h2>lugo</h2>
+					<div class="datepicker ll-skin-lugo"></div>
+				</td>
+
+				<td class="part">
+					<h2>cangas</h2>
+					<div class="datepicker ll-skin-cangas"></div>
+				</td>
+
+				<td class="part">
+					<h2>vigo</h2>
+					<div class="datepicker ll-skin-vigo"></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="part">
+					<h2>nigran</h2>
+					<div class="datepicker ll-skin-nigran"></div>
+				</td>
+
+				<td class="part">
+					<h2>siena</h2>
+					<div class="datepicker ll-skin-siena"></div>
+				</td>
+
+				<td></td>
+			</tr>
+
+		</table>
+	</article>
+	
+	<script src="js/jquery-1.10.2_1.js"></script>
+	<script src="js/jquery-ui-1.11.0_1.js"></script>
+	<script>
+		$(function() {	
+			$( ".datepicker" ).datepicker({
+				inline: true,
+				showOtherMonths: true
+			});
+		});
+	</script>
+</body>
+</html>

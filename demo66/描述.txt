@@ -1,0 +1,1 @@
+基于原生js面向对象结合HTML5绘图标签canvas实现的烟花爆炸特效，清新华丽。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE8及以下浏览器。

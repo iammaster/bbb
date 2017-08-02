@@ -1,0 +1,9 @@
+*{ margin:0; padding:0;font-family:'Microsoft yahei';}
+a{ text-decoration:none;}
+a img{ display:block; border:none;}
+li{ list-style:none;}
+
+#canvas{
+	background:#000;
+	display:block;
+}

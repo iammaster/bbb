@@ -1,0 +1,15 @@
+ * { margin: 0; padding: 0; }
+body{ background:#434343;}
+#Tz_warp{ width: 100%; min-width: 1000px;margin: 20px auto 0;position: relative;}
+#pic{ width: 870px; height: 540px; margin:0 auto; position: relative;padding: 20px;background-color:#222;border-radius: 20px;box-shadow: 0 0 7px #fff;overflow: hidden;padding-bottom: 120px;}
+#pic ul li{ position: absolute; top: 20px; left: 20px;display: none;}
+#pic ul li:nth-child(1){display: block;}
+#bottom{ width: 868px; height: 100px; margin-top: 10px;position: absolute;bottom: 20px; left:50%;z-index: 9999;margin-left: -435px;}
+#left,#right{ width: 30px; height: 100px;cursor: pointer;font-size: 30px;text-align: center;color: #999;position: absolute;top: 0;font-weight: bold;line-height: 100px; background-color: #fff;z-index: 999;}
+#left{left: 0;}
+#right{ right:0;}
+#mini{ width: 811px; height: 100px;position: absolute; top: 0; left:27px; background-color: #ffffff;position: relative;overflow: hidden}
+#mini ul{ width: 10000%;position: relative;margin-left: 0px;}
+#mini ul li{margin: 12px; float: left; width: 120px; height: 75px;}
+#mini ul li.mark{border: 4px solid #69b9cc; margin:8px;border-radius: 5px;position: relative;}
+#mini ul li.mark:before{content: ''; width: 0; height: 0;position: absolute;border-left: 10px solid transparent;border-top:10px solid transparent;border-bottom:10px solid #69B9CC;border-right:10px solid transparent; top: -22px; left: 49px;}

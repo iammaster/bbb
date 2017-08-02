@@ -1,0 +1,1 @@
+基于jQuery及jQuery.ui实现的多布局类型日历插件，灵活多变。兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，支持IE7及以上浏览器。
