@@ -1,0 +1,29 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0; padding: 0; }
+body { -webkit-user-select: none; }
+h1 { font-size: 56px; color: #cccccc; font-weight: bold; display: block; margin-top: 70px; text-shadow: 0 1px 0 rgba(59, 63, 69, 0.89) }
+body { background-color: #222222; overflow-x: hidden; text-align: center; }
+#Tz_box { height: 420px; width: 100%; box-shadow: 0 0 7px #000000; border-top: 7px solid #333333; border-bottom: 7px solid #333333; overflow: hidden; margin: 50px auto; position: relative }
+.bg div { height: 420px; background-color: transparent; background-position: left top; background-repeat: repeat; position: absolute; top: 0; left: 0; background: url("../images/bg.png"); }
+.bg .bg1 { background: url("../images/bg1.png"); }
+.bg .bg2 { background: url("../images/bg2.png"); }
+.bg .bg3 { background: url("../images/bg3.png"); }
+#Tz_wrap ul.slider { position: absolute }
+#Tz_wrap ul.slider > li { height: 420px; position: relative; float: left; }
+#Tz_wrap ul.slider > li img { border: 8px solid transparent; border-radius: 4px; box-shadow: 0 0 7px #222222; display: block; margin: 35px auto 0; }
+#Tz_wrap ul.thumbnails { height: 35px; left: 50%; position: absolute; top: 320px; width: 760px; }
+#Tz_wrap ul.thumbnails > li { position: absolute; display: block; width: 83px; height: 55px; }
+#Tz_wrap ul.thumbnails > li img { display: block; opacity: 0.7; box-shadow: 1px 1px 7px #555555; border: 5px solid #ffffff; cursor: pointer }
+.btn span { width: 30px; height: 60px; top: 145px; box-shadow: 0 0 2px #000000; cursor: pointer; position: absolute; opacity: 0.6; border-radius: 4px }
+.btn span.prev { background: #000000 url("../images/prev.png") no-repeat center; }
+.btn span.next { background: #000000 url("../images/next.png") no-repeat center; }

@@ -1,0 +1,1 @@
+基于jQuery结合HTML5绘图标签canvas实现的逼真雪花飘落特效，兼容360、FireFox、Chrome、Safari、Opera等主流浏览器，不支持IE9及以下浏览器。

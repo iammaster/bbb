@@ -1,0 +1,59 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+body { font-size: 16px; background: url("../images/bg.jpg") top/80%;}
+#Tz_box { width: 100px; height: 100px; z-index: 999; margin: 0 0 250px; position: relative; }
+#Tz_box ul { width: 0; height: 0; position: absolute; top: 0px; left: 0px; margin: 0; padding: 0; }
+#Tz_box ul li { border-radius: 0 0 300px; height: 0; width: 0; }
+#Tz_box ul li a { box-shadow: -5px 5px 5px rgba(177, 149, 67, 0.2); color: #fff; text-align: center; text-decoration: none; transform-origin: 0 0 0; font-size: 13px;font-family: "Microsoft yahei";font-weight: bold;line-height: 50px;}
+#Tz_box ul.z3 li > a{line-height: 80px;}
+.Tz_wrap span{display:block }
+.Tz_wrap { height: 110px; left: 0px; position: absolute; top: 0px; transition: all 0s ease 1s; width: 110px; z-index: 100; }
+#Tz_box ul.z1 li { left: 0; top: 0; position: absolute; }
+#Tz_box ul.z2 { z-index: -1 }
+#Tz_box ul.z3 { z-index: -1 }
+#Tz_box li.s1 > a { display: block; width: 100px; height: 100px; border-radius: 0 0 100px; position: absolute; background: rgba(47, 48, 48, 0.79) }
+#Tz_box li.s2 > a { display: block; width: 100px; height: 200px; border-radius: 0 0 200px; position: absolute; padding-left: 100px; background: rgba(127, 130, 131, 0.59) }
+#Tz_box ul.z3 li a { display: block; width: 100px; height: 300px; border-radius: 0 0 300px; position: absolute; padding-left: 200px; background: rgba(127, 130, 131, 0.44) }
+#Tz_box ul ul { transform: rotate(90deg); -webkit-transform: rotate(90deg); transform-origin: 0; transition: all 1s ease 0s; }
+#Tz_box li { transition: all 1s ease 0s; }
+#Tz_box li.s1> a{line-height: 80px}
+#Tz_box li.s1> a span { transform: rotate(30deg);-webkit-transform: rotate(30deg); }
+#Tz_box li.s2:nth-of-type(1) > a span { transform: rotate(6deg);-webkit-transform: rotate(6deg); }
+#Tz_box li.s2:nth-of-type(4) > a { transform: rotate(60deg);-webkit-transform: rotate(60deg);  }
+#Tz_box li.s2:nth-of-type(4) > a span { transform: rotate(10deg);-webkit-transform: rotate(10deg); }
+
+#Tz_box li.s2:nth-of-type(3) > a { transform: rotate(36deg);-webkit-transform: rotate(36deg);  }
+#Tz_box li.s2:nth-of-type(3) > a span{ transform: rotate(6deg);-webkit-transform: rotate(6deg);  }
+
+#Tz_box li.s2:nth-of-type(2) > a { transform: rotate(18deg); -webkit-transform: rotate(18deg);  }
+#Tz_box li.s2:nth-of-type(2) > a span{ transform: rotate(10deg); -webkit-transform: rotate(10deg);  }
+
+#Tz_box ul.z3 li:nth-of-type(5) > a { transform: rotate(72deg);-webkit-transform: rotate(72deg); }
+#Tz_box ul.z3 li:nth-of-type(5) > a span{ transform: rotate(12deg);-webkit-transform: rotate(12deg); }
+
+#Tz_box ul.z3 li:nth-of-type(4) > a { transform: rotate(54deg);-webkit-transform: rotate(54deg);}
+#Tz_box ul.z3 li:nth-of-type(4) > a span{ transform: rotate(12deg);-webkit-transform: rotate(12deg);}
+
+#Tz_box ul.z3 li:nth-of-type(3) > a { transform: rotate(36deg);-webkit-transform: rotate(36deg); }
+#Tz_box ul.z3 li:nth-of-type(3) > a span{ transform: rotate(6deg);-webkit-transform: rotate(6deg); }
+
+#Tz_box ul.z3 li:nth-of-type(2) > a { transform: rotate(18deg); -webkit-transform: rotate(18deg);}
+#Tz_box ul.z3 li:nth-of-type(2) > a span{ transform: rotate(4deg); -webkit-transform: rotate(4deg);}
+#Tz_box ul.z3 li:nth-of-type(1) > a span{ transform: rotate(7deg); -webkit-transform: rotate(7deg);}
+
+
+#Tz_box li.s1:hover ul.z2 { transform: rotate(0deg);-webkit-transform: rotate(0deg); }
+#Tz_box li.s2:hover ul.z3 { transform: rotate(0deg);  -webkit-transform: rotate(0deg); }
+#Tz_box li.s1:hover > a { background: rgb(254, 185, 81); }
+#Tz_box li.s2:hover > a { background: rgba(255, 187, 113, 0.82); }
+#Tz_box ul.z3 li:hover > a { background: rgba(243, 193, 122, 0.63); }

@@ -1,0 +1,42 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+body { background-color: #f2efe9; }
+a:active { border: none; }
+#Tz_wrap { width: 300px; color: #000000; perspective: 1200px; position: relative; margin: 30px auto }
+#Tz_wrap ul li { position: absolute; width: 300px; height: 59px; border-top: 1px solid #4e6a6a; border-bottom: 1px solid #4e6a6a; background-color: rgba(34, 45, 50, 0.95); transition: 0.4s ease; transform-origin: top; border-radius: 5px; }
+#Tz_wrap ul li > span { float: right; border-left: 1px solid #4e6a6a; display: inline-block; height: 59px; width: 60px; position: relative; }
+#Tz_wrap ul li > span:after { position: absolute; top: 18px; left: 24px; content: ''; border: 12px solid transparent; border-left-color: #ffffff; transition: 0.4s; }
+#Tz_wrap ul li.active > span:after { transform-origin: 6px 6px; transform: rotateZ(90deg); -webkit-transform: rotateZ(90deg); top: 22px; left: 28px }
+#Tz_wrap ul li a { display: inline-block; line-height: 59px; font-size: 16px; color: #ffffff; padding: 0 0 0 50px; transition: 0.2s; font-weight: 600; }
+#Tz_wrap ul li.on { -webkit-animation: k 0.1s ease; animation: k 0.1s ease; }
+#Tz_wrap ul li:not(:nth-of-type(1)):hover { background-color: rgba(36, 94, 113, 0.73); color: #ffffff; cursor: pointer; }
+#Tz_wrap ul li:not(:nth-of-type(1)):hover a { color: #ffffff; }
+@-webkit-keyframes k {
+    0%, 100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(30deg);
+        -webkit-transform: rotateX(30deg);
+    }
+}
+@keyframes k {
+    0%, 100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(30deg);
+        -webkit-transform: rotateX(30deg);
+    }
+}

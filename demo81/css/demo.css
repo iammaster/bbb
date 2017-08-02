@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image:url('../images/snow_bk.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color:#222;
+	position: relative;
+	width:100%;
+	overflow:hidden;
+}

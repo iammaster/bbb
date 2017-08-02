@@ -1,0 +1,28 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { }
+address, cite, em, i { font-style: normal; }
+small {  } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+*{margin:0;padding:0px;}
+#Tz_web{width:100%;height:910px;position:relative;}
+.con{width:100%;height:910px;overflow:hidden;position:relative;}
+.con ul li{width:100%;height:910px;position:absolute;top:0px;left:-100%;}
+.con .title{margin:120px auto 20px;display:block;}
+.con .home_desc{margin:0px auto;display:block;}
+.button{ width:350px;height:110px; margin:70px auto; background:url("../images/qrcode.png") no-repeat; background-position:right center;background-size:90px; }
+.con ul li a{ width:250px;height:50px;background:#fff; display:block;border-radius:2px;margin-bottom:5px; text-decoration:none;text-align:center;line-height:50px; font-size:20px;font-family:"微软雅黑";color:#a04f00; font-weight:bold; }
+.nav{ width:750px;height:102px; position:absolute;left:50%;margin-left:-375px;top:655px; }
+.dot{ width:780px;height:2px;margin-left:-30px; margin-top:24px;background:url("../images/dot.png"); }
+.bar{ width:150px;height:2px;background:#fff; }
+.nav ul{ position:absolute;left:0px;top:0px; width:750px;height:102px; }
+.nav ul li{ width:100px;height:102px;cursor:pointer; list-style-type:none;float:left;margin-left:65px; text-align:center;font-size:14px;color:#fff; }
+.nav ul .color_blue{color: #000000;}
+.nav ul .color_white{color:#fff;}
+.nav ul li img{display:block;margin:0px auto 20px;}

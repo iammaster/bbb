@@ -1,0 +1,22 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { }
+address, cite, em, i { font-style: normal; }
+small {  } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+body{ background: url("../images/bg.png");}
+#Tz_qq { width: 158px; height: 220px; position: fixed; top: 200px; right: 20px;
+ overflow: hidden; }
+#Tz_qq .qq_show { width: 158px; height: 220px; position: absolute; right: 0px; }
+#Tz_qq .qq_show .Con { width: 100%; height: 162px; background: url("../images/bg.jpg"); text-align: center;
+ padding-top: 10px; }
+#Tz_qq .qq_show img.top { display: block; }
+#Tz_qq .qq_show .Con p { height: 30px; color: #ffffff; width: 140px; margin: 0px auto; margin-top: 10px; font-size: 12px; font-family: "微软雅黑"; line-height: 30px; border-bottom: 1px solid #df5685; }
+#Tz_qq .qq_show .Con p a { color: #ffffff; text-decoration: none; }
+#Tz_qq img.hideImg { position: absolute; top: 20px; right: -33px; }

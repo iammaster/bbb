@@ -1,0 +1,46 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0; padding: 0; font-family: 'Microsoft yahei'; box-sizing: border-box; }
+body { background-color: #000000; color: #666666; }
+.Tz_wrap { width: 400px; position: relative; overflow: hidden; margin: 16px 40px 16px 160px; border: rgba(255, 255, 255, 0.9) solid 4px; text-align: center; float: left; }
+p { font-size: 14px; font-weight: 300; line-height: 20px; margin-bottom: 15px }
+h3 { font-size: 20px; margin: 5px 0 10px }
+img { max-width: 100%; vertical-align: middle; transition: 0.4s; }
+.txt { width: 100%; height: 100%; padding: 20px; top: 0; left: 0; opacity: 0; position: absolute; background-color: #ffffff; }
+.btn { background-color: #4d92d9; border: 2px #4d92d9 solid; color: #ffffff; display: inline-block; font-size: 14px; padding: 5px 10px; text-decoration: none; transition: 0.4s; }
+.btn:hover { background-color: #ffffff; color: #4d92d9; }
+.Tz_wrap:hover .pic img { border: 6px solid rgba(255, 255, 255, 0.7); }
+.Tz_wrap:hover .txt { opacity: 1; }
+.Tz_wrap:hover { overflow: hidden; }
+
+/*p1动画*/
+.p1:hover .pic img { position: relative; transform: scale(0.5) translateX(100%); z-index: 999; }
+.p1:hover .txt { transform: translateX(0); }
+.p1:hover { overflow: visible; }
+.p1 .txt { padding: 40px 120px 20px 20px; position: absolute; transform: translateX(-100%); transition: 0.5s; background-color: #ffffff; }
+
+/*p2动画*/
+.p2 { perspective: 500px; }
+.p2:hover .pic img { position: relative; transform: translateY(-100%); }
+.p2:hover .txt { transform: none; z-index: 0; }
+.p2 .txt { padding: 45px 20px; position: absolute; transform: rotateX(80deg); transform-origin: center bottom; transition: 0.5s; background-color: #ffffff; z-index: -1; }
+
+/*p3*/
+.p3 .txt { height: 0; left: 50%; overflow: hidden; padding: 0; top: 50%; width: 0; transition: 0.5s }
+.p3:hover .txt { width: 100%; height: 100%; top: 0; left: 0; padding: 45px 20px; opacity: 0.9 }
+.p3:hover img { transform: scale(1.2) }
+
+/*p4*/
+.p4 img { transform: rotateY(360deg) scale(1, 1); opacity: 1; z-index: 1; transition: 0.5s; }
+.p4 .txt { transform: rotateY(0deg) scale(0, 0); opacity: 0; z-index: 0; transition: 0.5s }
+.p4:hover .txt { transform: rotateY(360deg) scale(1, 1); opacity: 1; z-index: 1; }
+.p4:hover img { transform: rotateY(0deg) scale(0, 0); opacity: 0; z-index: 0; transition: 0.5s }

@@ -1,0 +1,30 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0px; padding: 0px; }
+
+#Tz_box{ width: 900px; height: 300px;margin: 150px auto;overflow: hidden}
+#Tz_Product { width: 860px; height: 250px; margin:20px auto;background-color: #fff;  }
+#Tz_Product .title { height: 30px; border-bottom: 1px solid #000000; }
+#Tz_Product .title .txt { width: 170px; height: 30px; float: left; font-size: 14px; line-height: 30px; font-family: "微软雅黑"; padding: 0 0 0 8px}
+#Tz_Product .title .sel { width: 364px; height: 30px; float: right; cursor: pointer}
+#Tz_Product .title .sel span { width: 120px; height: 29px; border: 1px solid #dddddd; display: inline-block;
+    font-size: 12px; line-height: 29px; text-align: center;
+    border-right: 0px; border-bottom: 0px; }
+#Tz_Product .title .sel span.last { border-right: 1px solid #dddddd; }
+#Tz_Product .title .sel span.active { background: #000000; color: #ffffff; }
+#Tz_Product .List { height: 220px; }
+#Tz_Product .List ul li { width: 214px; height: 215px; border: 1px solid #dddddd; list-style-type: none; float: left; border-top: 0px; border-right: 0px; text-align: center; }
+#Tz_Product .List ul li.last { border-right: 1px solid #dddddd; width: 213px; }
+#Tz_Product .List ul li p { font-size: 12px; line-height: 20px; }
+#Tz_Product .List ul li p del { color: #666666; font-family: "Arial"; }
+#Tz_Product .List ul li img { margin-bottom: 20px; }
+#Tz_Product .List ul { display: none; }

@@ -1,0 +1,22 @@
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0; padding: 0; }
+body { -webkit-user-select: none; background: url("../images/bg.jpg") 0% 50%; overflow: hidden; }
+#Tz_ball { display: block; background: black; border-radius: 50%; position: absolute;
+    height: 100px; width: 100px; top: 0; left: 0;
+    background: -webkit-radial-gradient(30px 30px, circle, rgba(218, 212, 225, 1), rgba(2, 2, 2, 1));
+    background: -moz-radial-gradient(30px 30px, circle, rgba(218, 212, 225, 1), rgba(2, 2, 2, 1));
+    background-image: radial-gradient(30px 30px, circle, rgba(218, 212, 225, 1), rgba(2, 2, 2, 1));
+}
+.shadow {
+    box-shadow: 4px 31px 31px -18px rgba(0, 0, 0, 0.8)
+}

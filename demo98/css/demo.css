@@ -1,0 +1,32 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { }
+address, cite, em, i { font-style: normal; }
+small {  } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+*{margin:0;padding:0;}
+body{ background: url("../images/bg.png");}
+ul,li{list-style:none;}
+#Tz_searchbox{width:520px;height:80px;
+    margin:50px auto 0;}
+#Tz_searchbox ul{width:500px;height:35px;}
+#Tz_searchbox ul li{float:left;font-size:14px;font-family:"微软雅黑";padding:0 20px;line-height:35px;cursor: pointer}
+#Tz_searchbox ul li.style1{background-color: #5561ff;color:#fff;}
+#Tz_searchbox ul li.style2{background-color:#8b0000;color:#fff;}
+#Tz_searchbox ul li.style3{background-color:#f90;color:#fff;}
+/*搜索框*/
+.bodys input{width:400px;height:30px;float:left;padding-left:10px;}
+.bodys .one{border:3px solid #5561ff;}
+.bodys .two{border:3px solid #8b0000;}
+.bodys .three{border:3px solid #f90;}
+/*按钮*/
+.bodys button{width:100px;height:36px;color:#fff;border:0;float:left;}
+.bodys .one1{background:#5561ff;}
+.bodys .two2{background:#8b0000;}
+.bodys .three3{background:#f90;}

@@ -1,0 +1,40 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0; padding: 0; }
+body { -webkit-user-select: none; }
+#Tz_wrap, #Tz_wrap div:not(.nav) { position: absolute; }
+#Tz_wrap, .pic { width: 100%; height: 100%; overflow: hidden; }
+#Tz_wrap .pic { z-index: 0; top: 0; left: 0; overflow: hidden; position: relative; perspective: 1200px; }
+#Tz_wrap .pic .imgs { width: 50%; height: 50%; overflow: hidden; }
+#Tz_wrap .pic .imgs .bgm { background: #999999 none repeat scroll 0 0; height: 100%; width: 100%; overflow: hidden; position: absolute; transition: 1s; }
+#Tz_wrap .pic .imgs:nth-child(2), #Tz_wrap .pic .imgs:nth-child(4) { left: 50%; }
+#Tz_wrap .pic .imgs:nth-child(3), #Tz_wrap .pic .imgs:nth-child(4) { top: 50%; }
+.imgs:nth-child(3) .bgm img, .imgs:nth-child(4) .bgm img { top: -100%; position: absolute }
+.imgs:nth-child(2) .bgm img, .imgs:nth-child(4) .bgm img { left: -100%; position: absolute }
+#Tz_wrap .nav { z-index: 999; top: 50%; }
+#Tz_wrap .nav span { width: 50px; height: 100px; position: absolute; top: 50%; font-size: 50px; color: #ffffff; display: block; z-index: 999; text-align: center; background-color: rgba(0, 0, 0, 0.2); line-height: 100px; margin-top: -50px; border-radius: 10px; cursor: pointer; }
+#Tz_wrap .nav span:hover { color: #ffffff; font-weight: bold; }
+#Tz_wrap .nav span.next { right: 0px; }
+#Tz_wrap .nav span.prev { left: 0px; }
+#Tz_wrap .pic.on .imgs {
+    -webkit-animation: scaleDown 1.1s ease-in-out;
+    animation: scaleDown 1.1s ease-in-out;
+}
+@-webkit-keyframes scaleDown {
+    from { -webkit-transform: translateZ(380px); transform: translateZ(380px); }
+    to { -webkit-transform: translateZ(0); transform: translateZ(0); }
+}
+@keyframes scaleDown {
+    from { -webkit-transform: translateZ(380px); transform: translateZ(380px); }
+    to { -webkit-transform: translateZ(0); transform: translateZ(0); }
+}

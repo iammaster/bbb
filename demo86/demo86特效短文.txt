@@ -1,0 +1,3 @@
+一款由HTML5+CSS3打造的扇形导航菜单,可以根据网站风格自行配色
+扇形伸展延伸效果,核心要点 transform transition border-radius
+兼容各大主流浏览器不兼容ie8以及以下版本
